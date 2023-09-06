@@ -236,7 +236,7 @@ const SkillsSection = () => {
           <div className="left"> <h2 className="text-3xl md:text-5xl font-bold text-white">About</h2>
         <motion.p
         
-        className='mt-2 md:w-3/4 p-2 text-white text-[14px] max-w-3xl leading-[30px] flex  '
+        className='mt-2 md:w-full p-2 text-white text-[14px] max-w-4xl leading-[30px] flex  '
         
       >
     I'm a JavaScript developer with a specialization in React and a keen interest in Node.js and Three.js. I thrive on close client collaboration to build efficient, scalable, and user-centric solutions. I'm eager to team up with you to turn your concepts into reality!
@@ -250,14 +250,14 @@ const SkillsSection = () => {
           <FontAwesomeIcon className="text-center" icon={faReact} color="#fff" /> {"  "} {" "}
           <FontAwesomeIcon className="text-center" icon={faNodeJs} color="#fff" />
         </div>
-        <small className='text-white'>Experience with React.js alongside HTML, CSS, Bootstrap, Javascript for frontend and Experience with Node Js, PHP and Database Optimization for backend</small>
+        <small className='text-white'>Proficient in front-end technologies including React.js, HTML, CSS, and Bootstrap, complemented by strong skills in JavaScript. Well-versed in back-end development with experience in Node.js, PHP, and database optimization.</small>
       </div>
       <div className="sm:w-1/2 text-center flex flex-wrap justify-center items-start">
         <div className="">
           <h6>Version-Control</h6>
           <FontAwesomeIcon className="text-center text-light" icon={faGithub} color="#fff" />
         </div>
-        <small className='text-white'>Experience with Git/Github  for continuous integration and deployment</small>
+        <small className='text-white'>I have a strong background in using Git and GitHub for continuous integration and continuous deployment (CI/CD) pipelines, automating the software development lifecycle to streamline testing, building, and deploying applications efficiently.</small>
       </div>
     </div>
       </div>

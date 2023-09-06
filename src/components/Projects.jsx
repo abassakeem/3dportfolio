@@ -21,7 +21,7 @@ export const projects = [
   },
   {
     title: "A budget App",
-    url: "https://budgetappabass.netlify.app",
+    url: "https://mybudgetappabass.netlify.app",
     image: "projects/budget.png",
     description: "I developed a budget management application with an integrated pie chart, enabling users to calculate their budget and expenses easily. The intuitive visualization allows for a quick assessment of whether they are within or exceeding their budget.",
   },
