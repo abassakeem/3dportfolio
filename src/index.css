@@ -1,0 +1,273 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@100;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@100;700&display=swap");
+
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#root {
+  width: 100vw;
+  height: 100vh;
+}
+
+body {
+  margin: 0;
+  font-family: "Bai Jamjuree", sans-serif;
+}
+
+
+.loading-reference{
+  font-size: 12px;
+  text-align: center;
+}
+.social-icon a{
+  font-size: 24px;
+  margin-right: 20px;
+  font-weight: 900;
+  color: #000;
+  position: relative;
+  
+
+}
+
+
+.social-icon a::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #000 ;
+  transform: scaleX(0);
+  transform-origin: right ;
+  transition: transform 240ms ease-in;
+ 
+}
+.social-icon a:hover::after{
+  transform: scaleX(1);
+  transform-origin:left ;
+ 
+}
+
+.hero-name{
+  font-family: "Bai Jamjuree", sans-serif;
+  font-weight: 900 !important;
+}
+.hero-text{
+  font-family: "Bai Jamjuree", sans-serif;
+}
+
+.stage-cube-cont{
+  margin-top: 30px;
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+}
+.cubespinner {
+  margin-top: 50px ;
+  text-align: center;
+  animation-name: spincube;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 12s;
+  transform-style: preserve-3d;
+  transform-origin: 100px 100px 0;
+  margin-left: calc(50% - 100px); 
+}
+
+  
+  .face {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border: 1px solid #ccc;
+    background: rgba(33, 33,33, 0.4);
+    text-align: center;
+    font-size: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 20px 0px lightyellow;
+  }
+  .face1 {
+    transform: translateZ(100px);
+    color: #dd0031;
+  }
+  .face2 {
+    transform: rotateY(90deg) translateZ(100px);
+    color: #f06529;
+  }
+  .face3 {
+    transform: rotateY(90deg) rotateX(90deg) translateZ(100px);
+    color: #28a4d9;
+  }
+  .face4 {
+    transform: rotateY(180deg) rotateZ(90deg) translateZ(100px);
+    color: #5ed4f4;
+  }
+  .face5 {
+    transform: rotateY(-90deg) rotateZ(90deg) translateZ(100px);
+    color: #efd81d;
+  }
+  .face6 {
+    transform: rotateX(-90deg) translateZ(100px);
+    color: #ec4d28;
+  }
+
+
+  @keyframes spincube {
+    from,
+    to {
+      transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    }
+    16% {
+      transform: rotateY(-90deg);
+    }
+    33% {
+      transform: rotateY(-90deg) rotateZ(90deg);
+    }
+    50% {
+      transform: rotateY(-180deg) rotateZ(90deg);
+    }
+    66% {
+      transform: rotateY(-270deg) rotateX(90deg);
+    }
+    83% {
+      transform: rotateX(90deg);
+    }
+  }
+
+
+
+
+
+  @media only screen and (max-width:850px)  {
+
+    
+    .stage-cube-cont{
+      margin-top: 30px;
+      width: 300px;
+      height: 300px;
+      overflow: hidden;
+    }
+    .cubespinner {
+      margin-top: 50px ;
+      text-align: center;
+      animation-name: spincube;
+      animation-timing-function: ease-in-out;
+      animation-iteration-count: infinite;
+      animation-duration: 12s;
+      transform-style: preserve-3d;
+      transform-origin: 100px 100px 0;
+      margin-left: calc(50% - 100px); 
+    }
+    
+      
+      .face {
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        border: 1px solid #ccc;
+        background: rgba(33, 33, 33,0.2);
+        text-align: center;
+        font-size: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 0 20px 0px lightyellow;
+      }
+      .face1 {
+        transform: translateZ(100px);
+        color: #dd0031;
+      }
+      .face2 {
+        transform: rotateY(90deg) translateZ(100px);
+        color: #f06529;
+      }
+      .face3 {
+        transform: rotateY(90deg) rotateX(90deg) translateZ(100px);
+        color: #28a4d9;
+      }
+      .face4 {
+        transform: rotateY(180deg) rotateZ(90deg) translateZ(100px);
+        color: #5ed4f4;
+      }
+      .face5 {
+        transform: rotateY(-90deg) rotateZ(90deg) translateZ(100px);
+        color: #efd81d;
+      }
+      .face6 {
+        transform: rotateX(-90deg) translateZ(100px);
+        color: #ec4d28;
+      }
+    }
+
+
+
+.tech-img{
+  height: 44px;
+}
+.tech-name{
+  font-size: 12px;
+}
+.previous-button, .next-button{
+  background-color: transparent;
+  padding: 15px;
+  border:1px solid #fff;
+  border-radius: 13px 12px ;
+  color: #fff
+}
+
+input{
+  background-color: transparent;
+  border-bottom: 1px solid black !important;
+  border-radius: 0 !important;
+  font-size: 12px;
+}
+textarea{
+  background-color: transparent;
+  border: 1px solid #000 !important;
+  font-size: 12px;
+}
+.submit-button:hover {
+  background-color:  #fff !important;
+  color: #000
+}
+
+.my-projects-title{
+  margin-top: 100px !important;
+}
+.tech-text{
+  font-size: 10px;
+  
+}
+.tech-img{
+  
+   height: 40px;
+  
+}
+.resume-download-btn img{
+  height:25px;
+  width: 25px;
+  display: inline ;
+  
+}
+.resume-download-btn {
+  border: 1px solid #000;
+  
+  transition: 0.1s;
+}
+.resume-download-btn:hover {
+  background-color: rgb(244, 237, 237);
+  
+}
+.contact-me-btn:hover {
+  background-color: rgb(100, 45, 163);
+  
+}
